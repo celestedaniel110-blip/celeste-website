@@ -3,64 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="T'bur Maramag - burgers, drinks, pickup order, and seat reservation request".> 
+    <meta name="description" content="T'bur Maramag - burgers, drinks, pickup order, and seat reservation request"> 
     <title>T'Bur Maramag | Burgers & Tea</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header> 
-        <div class="logo-area">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuexOn2Q3fqHkHcxFdpQwicizVZdWdC8ucThFVJhzceNaAqN4YBAQy2oI&s=10" alt="T'bur Burger n' Tea Logo">
-            <span> T'bur Maramag</span>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#order">Online Order</a></li>
-                <li><a href="#reserve">Reserve Seat</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-                <li><a href="#about">About Us</a></li>
-            </ul>
+    <!--header Section-->
+    <header class="site-header" id="home">
+        <a class="brand" href="#home" aria-label="T'Bur Maramag">
+            <img src="images/logo.png" alt="T'Bur Logo" class="brand-logo">
+        </a>
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="#home"> Home</a>
+            <a href="#menu"> Menu</a>
+            <a href="#order"> Order</a>
+            <a href="#reserve"> Reserve a Seat</a>
+            <a href="#promos"> Promos</a>
+            <a href="#about"> About</a>
+            <a href="#contact"> Contact</a>
         </nav>
-        </div>
+        <a class="cart-link" href="#order"> <span>Order</span></a>
     </header>
+
+    <!--hero section-->
     <main> 
         <section class="hero">
-            <div class="hero">
-                <h1> Big Flavor, Made In Maramag</h1>
-                <p> Fresh burger's and milk tea. check our menu, order for pickup, and reserve a seat befor you visit. </p>
-                <a class="button" href="#"> Order Now </a>
+            <div class="hero-content">
+                <p class="eyebrow"> Welcome To T'Bur Maramag</p>
+                <h1>Good Food<br><span>Good Mood</span></h1>
+                <p class="hero-copy"> Enjoy delicious burgers, refreshing drinks, and a cozy place to dine with your family and friends.</p>
+                <div class="hero-actions">
+                    <a class="button button-red" href="#order"> Order Now <span>></span></a>
+                    <a class="button button-outline" href="#reserve">Reserve a Seat</a>
+                </div>
             </div>
+            <div class="hero-photo" role="img" aria-label="Delicious burger and fries"></div>
         </section> 
-        <section id="about">
-            <h2> About T'bur Maramag</h2>
-            <p> T'bur is a local burger and tea business in Maramag, Bukidnon. Whether you're a student, a worker, or out with friends, and family, we want getting your meal to be quick and easy.</p>
+
+        <!--Menu Section-->
+        <section class="section menu-section" id="menu">
+            <div class="section-heading">
+                <p class="eyebrow"> MADE FRESH FOR YOU</p>
+                <h2> Our <span> Menu </span></h2>
+                <p> Find your favorites and choose what you want to enjoy.</p>
+            </div>
+            <div class="menu-grid"> 
+                <article class="food-card">
+                    <img src="images/burgerpicture.png" alt="Double patty cheeseburger">
+                    <div class="food-info"> 
+                        <div>
+                            <h3>Classic Burger</h3>
+                            <p> Juicy and delicious.</p>
+                        </div>
+                        <strong>₱84</strong>
+                    </div>
+                </article>
+                <article class="food-card">
+                    <img src="images/classic burger.png" alt="classic cheeseburger">
+                    <div class="food-info">
+                        <div> 
+                            <h3>Cheesy Burger</h3>
+                            <p> for cheese lovers</p>
+                        </div>
+                        <strong>₱48</strong>
+                    </div>
+                    <a class="small-button" href="#order">Order this</a>
+                </article>
+
+                <article class="food-card"> 
+                    <img src="images/milktea.png" alt="Ice Milk Tea">
+                    <div class="food-info">
+                        <div>
+                            <h3>Iced Milk Tea</h3>
+                            <p> Cool and Refreshing.</p>
+                        </div>
+                        <strong>₱55</strong>
+                    </div>
+                    <a class="small-button"href="#order"> Order this</a>
+                </article>
+            </div>
+            <p class="note">Explore our delicious selections and find your new favorite@</p>
         </section>
 
-        <section>
-            <h2> HIGHLIGHTS</h2>
-            <div class="highlights">
-                <div class="card">
-                    <h3> Digital Menu</h3>
-                    <p>See our Burgers, drinks, and prices in one place.</p>
+
+        <!--Order Section-->
+
+        <section class="section order-section" id="order">
+            <div class="section-heading ">
+                <p class="eyebrow"> QUICK AND EASY</p>
+                <h2> Order <span> Online </span></h2>
+                <p> Choose Your Food and Request a Pickup time.</p>
             </div>
-            <div class="card">
-                <h3>Pickup Order</h3>
-                <p> Choose your food online and pick a time to collect it.</p>
-            </div>
-        </section>
-        <section>
-            <div class="card">
-                <h3> Reservation</h3>
-                <p> Request a table for you and friends or family.</p>
-            </div>
-        </section>
-    </main>
-    <footer> 
-        <p> Maramag, Bukidnon | Phone: <u> 09918875854</u> | facabook:<u> https://www.facebook.com/share/1DMXPu4GkN/</p></u>
-        <p>&copy; 2026 T'Bur Maramag. <b>@website developed by Daniel Celeste</p></b>
-    </footer>
-    
+            <form class="form-card" action="#" method="get">
+                <div class="form-grid">
+                    <label> Your Name<input type="text" name="customer-name" placeholder="Enter Your Name" required></label>
+          <label>Contact number<input type="tel" name="contact" placeholder="09XXXXXXXXX" required></label>
+          <label class="full">Choose your order
+            <select name="food" required>
+              <option value="">Select an item</option>
+              <option>Classic Burger</option>
+              <option>Cheesy Burger</option>
+              <option>Iced Milk Tea</option>
+            </select>
+          </label>
+          <label>Quantity<input type="number" name="quantity" min="1" value="1" required></label>
+          <label>Preferred pickup time<input type="time" name="pickup-time" required></label>
+          <label class="full">Additional instructions<textarea name="instructions" rows="3" placeholder="Example: No onions"></textarea></label>
+        </div>
+        <button class="button button-red" type="submit">Submit Order Request</button>
+        <p class="form-note">Please wait for staff confirmation before picking up your order.</p>
+      </form>
+    </section>
+
+    <section class="section reserve-section" id="reserve">
+      <div class="reserve-copy">
+        <p class="eyebrow">PLANNING TO DINE WITH US?</p>
+        <h2>Save a seat for<br><span>your favorite people.</span></h2>
+        <p>Send a reservation request before visiting T’Bur. Our staff can check the available seats and confirm your request.</p>
+      </div>
+      <form class="form-card reserve-form" action="#" method="get">
+        <h3>Reserve a Seat</h3>
+        <label>Your name<input type="text" name="reservation-name" placeholder="Enter your name" required></label>
+        <label>Contact number<input type="tel" name="reservation-contact" placeholder="09XXXXXXXXX" required></label>
+        <div class="form-grid">
+          <label>Date<input type="date" name="reservation-date" required></label>
+          <label>Time<input type="time" name="reservation-time" required></label>
+        </div>
+        <label>Number of people<input type="number" name="party-size" min="1" value="2" required></label>
+        <button class="button button-red" type="submit">Send Reservation Request</button>
+        <p class="form-note">Your reservation will be confirmed by our staff. Thank you for choosing T'Bur!.</p>
+      </form>
+    </section>
+
+    <section class="promo-section" id="promos">
+      <div>
+        <p class="eyebrow">DON’T MISS OUT</p>
+        <h2>Good deals.<br><span>Great bites.</span></h2>
+        <p>Check this section for new products, special offers, and limited-time promotions.</p>
+        <a class="button button-light" href="#menu">Explore the Menu</a>
+      </div>
+      <div class="promo-sticker">T’BUR<br><strong>SPECIAL<br>DEALS!</strong></div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="about-photo" role="img" aria-label="Burger meal"></div>
+      <div>
+        <p class="eyebrow">GET TO KNOW US</p>
+        <h2>About <span>T’Bur</span></h2>
+        <p>T’Bur Maramag is a local burger and tea business in Maramag, Bukidnon. This website concept aims to make it easier for customers to discover the business, view its products, request pickup orders, and ask for a seat reservation.</p>
+        <p>Our goal is to give customers a simple and convenient online experience while keeping T’Bur’s own identity.</p>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div>
+        <p class="eyebrow">COME AND VISIT US</p>
+        <h2>Find <span>T’Bur</span></h2>
+        <p>Maramag, Bukidnon, Philippines</p>
+        <p>For the latest updates, contact details, and opening hours, please check T’Bur’s official social-media page.</p>
+      </div>
+      <div class="contact-card">
+        <h3>Contact & Location</h3>
+        <p><strong>Location:</strong> Maramag, Bukidnon</p>
+        <p><strong>Business hours:</strong> To be confirmed by the owner</p>
+        <p><strong>Social media:</strong> Add the verified official page link here</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#home"><span class="brand-icon">🍔</span><span>T’BUR <small>MARAMAG</small></span></a>
+    <p>© 2026 T’Bur Maramag. Developed by Daniel Celeste.</p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
 </body>
 </html>
+                  
