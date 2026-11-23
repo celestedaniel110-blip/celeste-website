@@ -16,13 +16,13 @@
         <nav class="main-nav" aria-label="Main navigation">
             <a href="#home"> Home</a>
             <a href="#menu"> Menu</a>
-            <a href="#order"> Order</a>
+            <a href="#order"> Order Online</a>
             <a href="#reserve"> Reserve a Seat</a>
-            <a href="#promos"> Promos</a>
+            <a href="#promos"> Promos T'Bur</a>
             <a href="#about"> About</a>
-            <a href="#contact"> Contact</a>
+            <a href="#contact"> Contact / Location</a>
         </nav>
-        <a class="cart-link" href="#order"> <span>Order</span></a>
+        <a class="cart-link" href="#order"><span>Order Now</span></a>
     </header>
 
     <!--hero section-->
@@ -40,7 +40,46 @@
             <div class="hero-photo" role="img" aria-label="Delicious burger and fries"></div>
         </section> 
 
+
+<!-- Highlights Section -->
+<section class="section highlights-section" id="highlights">
+    <div class="section-heading">
+        <p class="eyebrow">Why T'Bur</p>
+        <h2>Easy <span>Ordering</span></h2>
+    </div>
+    <div class="menu-grid">
+        <article class="food-card">
+            <div class="food-info">
+                <div>
+                    <h3>Digital Menu</h3>
+                    <p>See our burgers, drinks, and prices in one place.</p>
+                </div>
+            </div>
+            <a class="small-button" href="#menu">View Menu</a>
+        </article>
+        <article class="food-card">
+            <div class="food-info">
+                <div>
+                    <h3>Pickup Order</h3>
+                    <p>Choose your food and a pickup time.</p>
+                </div>
+            </div>
+            <a class="small-button" href="#order">Order Now</a>
+        </article>
+        <article class="food-card">
+            <div class="food-info">
+                <div>
+                    <h3>Seat Reservation</h3>
+                    <p>Request a table for friends or family.</p>
+                </div>
+            </div>
+            <a class="small-button" href="#reserve">Reserve</a>
+        </article>
+    </div>
+</section>
+
         <!--Menu Section-->
+
         <section class="section menu-section" id="menu">
             <div class="section-heading">
                 <p class="eyebrow"> MADE FRESH FOR YOU</p>
@@ -86,71 +125,8 @@
             <p class="note">Explore our delicious selections and find your new favorite</p>
         </section>
 
-
-        <!--Order Section-->
-
-        <section class="section order-section" id="order">
-            <div class="section-heading ">
-                <p class="eyebrow"> QUICK AND EASY</p>
-                <h2> Order <span> Online </span></h2>
-                <p> Choose Your Food and Request a Pickup time.</p>
-            </div>
-            <form class="form-card" action="#" method="get">
-                <div class="form-grid">
-                    <label> Your Name<input type="text" name="customer-name" placeholder="Enter Your Name" required></label>
-          <label>Contact number<input type="tel" name="contact" placeholder="09XXXXXXXXX" required></label>
-          <label class="full">Choose your order
-            <select name="food" required>
-              <option value="">Select an item</option>
-              <option>Double-Patty Cheeseburger</option>
-              <option>French Fries</option>
-              <option>Iced Milk Tea</option>
-            </select>
-          </label>
-          <label>Quantity<input type="number" name="quantity" min="1" value="1" required></label>
-          <label>Preferred pickup time<input type="time" name="pickup-time" required></label>
-          <label class="full">Additional instructions<textarea name="instructions" rows="3" placeholder="Example: No onions"></textarea></label>
-        </div>
-        <button class="button button-red" type="submit">Submit Order Request</button>
-        <p class="form-note">Please wait for staff confirmation before picking up your order.</p>
-      </form>
-    </section>
-
-    <!--reserve section-->
-
-    <section class="section reserve-section" id="reserve">
-      <div class="reserve-copy">
-        <p class="eyebrow">PLANNING TO DINE WITH US?</p>
-        <h2>Save a seat for<br><span>your favorite people.</span></h2>
-        <p>Send a reservation request before visiting T’Bur. Our staff can check the available seats and confirm your request.</p>
-      </div>
-      <form class="form-card reserve-form" action="#" method="get">
-        <h3>Reserve a Seat</h3>
-        <label>Your name<input type="text" name="reservation-name" placeholder="Enter your name" required></label>
-        <label>Contact number<input type="tel" name="reservation-contact" placeholder="09XXXXXXXXX" required></label>
-        <div class="form-grid">
-          <label>Date<input type="date" name="reservation-date" required></label>
-          <label>Time<input type="time" name="reservation-time" required></label>
-        </div>
-        <label>Number of people<input type="number" name="party-size" min="1" value="2" required></label>
-        <button class="button button-red" type="submit">Send Reservation Request</button>
-        <p class="form-note">Your reservation will be confirmed by our staff. Thank you for choosing T'Bur!.</p>
-      </form>
-    </section>
-
-
-<!--Promo section-->
-    <section class="promo-section" id="promos">
-      <div>
-        <p class="eyebrow">DON’T MISS OUT</p>
-        <h2>Good deals.<br><span>Great bites.</span></h2>
-        <p>Check this section for new products, special offers, and limited-time promotions.</p>
-        <a class="button button-light" href="#menu">Explore the Menu</a>
-      </div>
-      <div class="promo-sticker">T’BUR<br><strong>SPECIAL<br>DEALS!</strong></div>
-    </section>
-
-    <section class="section about-section" id="about">
+<!--about section -->
+     <section class="section about-section" id="about">
       <div class="about-photo" role="img" aria-label="Burger meal"></div>
       <div>
         <p class="eyebrow">GET TO KNOW US</p>
@@ -170,15 +146,15 @@
       <div class="contact-card">
         <h3>Contact & Location</h3>
         <p><strong>Location:</strong> Maramag, Bukidnon</p>
-        <p><strong>Business hours:</strong> To be confirmed by the owner</p>
+        <p><strong>Business hours:</strong> 8:00am - 5:00pm </p>
         <p><strong>Social media:</strong> Add the verified official page link here</p>
       </div>
     </section>
+
   </main>
 
   <footer>
     <a class="brand footer-brand" href="#home">
-      <span class="brand-icon">🍔</span>
       <span>T’BUR <small>MARAMAG</small></span>
     </a>
 
